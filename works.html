@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works | Yuichiro Mori</title>
+  <meta name="description" content="Yuichiro Moriのポートフォリオ・作品一覧です。noteで活動中。" />
+
+  <!-- Google Fonts: 英字はSpace Grotesk、日本語はNoto Sans JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== カスタムカーソル ===== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Yuichiro Mori</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">About</a>
+        <a href="works.html" class="nav-link active">Works</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== ページヒーロー ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-label fade-up">Portfolio</div>
+      <h1 class="page-hero-title fade-up">Works</h1>
+      <p class="page-hero-desc fade-up">
+        noteで活動中の記事・作品をまとめています。<br />
+        AIいじりを中心に、試してみたことや発見をシェアしています。
+      </p>
+
+      <!-- noteへの導線ボタン（目立つ位置に配置） -->
+      <!-- URLを変更する場合はhrefの値を書き換えてください -->
+      <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="btn-note fade-up">
+        noteを見る →
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== ワークスセクション ===== -->
+  <section class="section works-section">
+    <div class="container">
+
+      <!-- カテゴリフィルターボタン -->
+      <!-- カテゴリを増やしたい場合はここにボタンを追加してください -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">すべて</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+        <button class="filter-btn" data-filter="tool">ツール</button>
+        <button class="filter-btn" data-filter="daily">日常</button>
+      </div>
+
+      <!-- 作品カードグリッド -->
+      <!-- カードを増やしたい場合はここに .work-card を追加してください -->
+      <!-- data-category属性でフィルタリングが機能します（all / ai / tool / daily） -->
+      <div class="works-grid" id="works-grid">
+
+        <!-- カード1 -->
+        <article class="work-card reveal" data-category="ai">
+          <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="work-card-link">
+            <div class="work-card-image">
+              <!-- 画像のグラデーションプレースホルダー（パープル系） -->
+              <div class="card-placeholder card-placeholder--purple">
+                <span class="card-placeholder-icon">🤖</span>
+              </div>
+              <div class="work-card-tag">AI</div>
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-card-title">Claude Codeを使ってみたら、コードが書けなくても何か作れた話</h3>
+              <p class="work-card-desc">
+                AIと対話するだけでWebサイトが完成。プログラミング未経験でも「作る」楽しさを体験できたレポートです。
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <!-- カード2 -->
+        <article class="work-card reveal" data-category="ai">
+          <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="work-card-link">
+            <div class="work-card-image">
+              <!-- 画像のグラデーションプレースホルダー（ブルー系） -->
+              <div class="card-placeholder card-placeholder--blue">
+                <span class="card-placeholder-icon">✨</span>
+              </div>
+              <div class="work-card-tag">AI</div>
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-card-title">ChatGPT・Claude・Gemini を1週間使い比べた正直な感想</h3>
+              <p class="work-card-desc">
+                それぞれの得意なことと苦手なことを、実際に使ってみた体験をもとにまとめました。
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <!-- カード3 -->
+        <article class="work-card reveal" data-category="tool">
+          <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="work-card-link">
+            <div class="work-card-image">
+              <!-- 画像のグラデーションプレースホルダー（グリーン系） -->
+              <div class="card-placeholder card-placeholder--green">
+                <span class="card-placeholder-icon">⚙️</span>
+              </div>
+              <div class="work-card-tag">ツール</div>
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-card-title">AIで日常の繰り返し作業を自動化してみた【初心者でも再現できる】</h3>
+              <p class="work-card-desc">
+                毎日やっていた単純作業をAIに任せたら、思った以上に時間が浮きました。そのやり方を共有します。
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <!-- カード4 -->
+        <article class="work-card reveal" data-category="tool">
+          <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="work-card-link">
+            <div class="work-card-image">
+              <!-- 画像のグラデーションプレースホルダー（オレンジ系） -->
+              <div class="card-placeholder card-placeholder--orange">
+                <span class="card-placeholder-icon">📱</span>
+              </div>
+              <div class="work-card-tag">ツール</div>
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-card-title">無料で使えるAIツール5選｜2026年版・用途別おすすめ</h3>
+              <p class="work-card-desc">
+                実際に使い続けているツールだけをピックアップ。無料でここまでできるのかと驚いたものばかりです。
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <!-- カード5 -->
+        <article class="work-card reveal" data-category="daily">
+          <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="work-card-link">
+            <div class="work-card-image">
+              <!-- 画像のグラデーションプレースホルダー（ピンク系） -->
+              <div class="card-placeholder card-placeholder--pink">
+                <span class="card-placeholder-icon">🌇</span>
+              </div>
+              <div class="work-card-tag">日常</div>
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-card-title">福岡でのんびりAIいじりをしている日常のこと</h3>
+              <p class="work-card-desc">
+                特別なことじゃなくても、毎日少しずつ試している。そんな自分の日常をゆるく書いたエッセイです。
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <!-- カード6 -->
+        <article class="work-card reveal" data-category="ai">
+          <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="work-card-link">
+            <div class="work-card-image">
+              <!-- 画像のグラデーションプレースホルダー（パープル系） -->
+              <div class="card-placeholder card-placeholder--violet">
+                <span class="card-placeholder-icon">💡</span>
+              </div>
+              <div class="work-card-tag">AI</div>
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-card-title">AIに「プロンプト」を上手く伝えるコツ【自分なりのメモ】</h3>
+              <p class="work-card-desc">
+                試行錯誤しながら気づいた、AIへの頼み方のちょっとしたコツをまとめました。初心者目線で書いています。
+              </p>
+            </div>
+          </a>
+        </article>
+
+      </div><!-- /works-grid -->
+
+      <!-- もっと見るボタン -->
+      <div class="works-more reveal">
+        <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+          noteでもっと見る →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== フッター ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 Yuichiro Mori</p>
+        <!-- ページトップへ戻るボタン -->
+        <button class="back-to-top" id="back-to-top" aria-label="ページトップへ">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+          Top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

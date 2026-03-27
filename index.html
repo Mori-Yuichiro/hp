@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuichiro Mori</title>
+  <meta name="description" content="福岡で活動中のYuichiro Moriの個人サイトです。AIいじりが趣味です。" />
+
+  <!-- Google Fonts: 英字はSpace Grotesk、日本語はNoto Sans JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== カスタムカーソル ===== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ===== ヘッダー ===== -->
+  <!-- スクロールで .scrolled クラスが付いてスタイルが変わる -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Yuichiro Mori</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">About</a>
+        <a href="works.html" class="nav-link">Works</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== ヒーローセクション ===== -->
+  <section class="hero" id="home">
+    <!-- パーティクルキャンバス（AIっぽい回路・ドット演出） -->
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="hero-content">
+      <p class="hero-greeting fade-up">Hello, I'm</p>
+      <h1 class="hero-name fade-up">Yuichiro Mori</h1>
+
+      <!-- タイピングアニメーションで順番に表示される -->
+      <div class="typing-wrapper fade-up">
+        <span class="typing-prefix">I'm a </span>
+        <span class="typing-text" id="typing-text"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+
+      <div class="hero-cta fade-up">
+        <a href="#about" class="btn-primary">About Me</a>
+        <a href="works.html" class="btn-secondary">Works →</a>
+      </div>
+    </div>
+
+    <!-- スクロールインジケーター -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== Aboutセクション ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-label reveal">About</div>
+      <h2 class="section-title reveal">自己紹介</h2>
+
+      <div class="about-grid">
+        <!-- 顔写真エリア（画像なしでも成立するダークなプレースホルダー） -->
+        <div class="about-image reveal">
+          <div class="image-placeholder">
+            <div class="image-placeholder-inner">
+              <!-- イニシャルで代替 -->
+              <span class="placeholder-initials">YM</span>
+              <!-- パープルの発光エフェクト -->
+              <div class="placeholder-glow"></div>
+            </div>
+          </div>
+          <!-- ステータスバッジ -->
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            福岡在住
+          </div>
+        </div>
+
+        <!-- 自己紹介テキスト -->
+        <!-- ここのテキストを自由に編集してください -->
+        <div class="about-text">
+          <p class="about-para reveal">
+            はじめまして、Yuichiro Moriです。<br />
+            福岡を拠点に、日々あれこれと試しながら生活しています。
+            特定の肩書きにこだわらず、自分のペースで好奇心の向くままに動くのが
+            いまの自分のスタイルです。
+          </p>
+          <p class="about-para reveal">
+            最近ハマっているのがAIいじり。
+            Claude Codeをはじめとした生成AIツールを使って、
+            「これ自動化できないかな？」「こんなもの作れないかな？」と
+            毎日いろいろと実験しています。
+            プログラミングの経験がなくても、AIと対話しながら
+            少しずつ形にできるのがおもしろくて、すっかり沼にはまり中です。
+          </p>
+          <p class="about-para reveal">
+            noteには実際に試してみたこと、気づいたこと、
+            おすすめのツールなどをまとめています。
+            同じように「AIって何ができるの？」と興味を持っている方に
+            少しでも参考になれば嬉しいです。
+          </p>
+
+          <!-- スキル・興味タグ -->
+          <!-- タグを追加・削除したいときはここを編集 -->
+          <div class="tags reveal">
+            <span class="tag">AI</span>
+            <span class="tag">Claude Code</span>
+            <span class="tag">自動化</span>
+            <span class="tag">福岡</span>
+            <span class="tag">新しいこと</span>
+            <span class="tag">note</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== リンクセクション ===== -->
+  <section class="section links-section" id="links">
+    <div class="container">
+      <div class="section-label reveal">Connect</div>
+      <h2 class="section-title reveal">SNS・リンク</h2>
+      <p class="links-desc reveal">各プラットフォームで活動中です。お気軽にフォローどうぞ。</p>
+
+      <div class="links-grid">
+        <!-- X(Twitter) リンク -->
+        <!-- URLを変更する場合はhrefの値を書き換えてください -->
+        <a href="https://x.com/Yusan54873" target="_blank" rel="noopener noreferrer" class="link-card reveal">
+          <div class="link-icon">
+            <!-- X(Twitter) アイコン（SVG） -->
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </div>
+          <div class="link-info">
+            <span class="link-name">X (Twitter)</span>
+            <span class="link-handle">@Yusan54873</span>
+          </div>
+          <div class="link-arrow">→</div>
+        </a>
+
+        <!-- note リンク -->
+        <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="link-card reveal">
+          <div class="link-icon">
+            <!-- note アイコン（SVG） -->
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path d="M20.4 0H3.6C1.6 0 0 1.6 0 3.6v16.8C0 22.4 1.6 24 3.6 24h16.8c2 0 3.6-1.6 3.6-3.6V3.6C24 1.6 22.4 0 20.4 0zm-3.3 16.4c-.2.5-.6.8-1.1.8s-.9-.2-1.2-.7l-3-4.6v4.5c0 .7-.6 1.2-1.2 1.2-.7 0-1.2-.5-1.2-1.2V7.7c0-.5.3-.9.7-1.1.4-.2.9-.1 1.2.2l3.2 4.9V7.2c0-.7.5-1.2 1.2-1.2.6 0 1.2.5 1.2 1.2v8.3c0 .4 0 .6-.8.9z"/>
+            </svg>
+          </div>
+          <div class="link-info">
+            <span class="link-name">note</span>
+            <span class="link-handle">yamasan_2351</span>
+          </div>
+          <div class="link-arrow">→</div>
+        </a>
+
+        <!-- GitHub リンク -->
+        <a href="https://github.com/Mori-Yuichiro" target="_blank" rel="noopener noreferrer" class="link-card reveal">
+          <div class="link-icon">
+            <!-- GitHub アイコン（SVG） -->
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </div>
+          <div class="link-info">
+            <span class="link-name">GitHub</span>
+            <span class="link-handle">Mori-Yuichiro</span>
+          </div>
+          <div class="link-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== フッター ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 Yuichiro Mori</p>
+        <!-- ページトップへ戻るボタン -->
+        <button class="back-to-top" id="back-to-top" aria-label="ページトップへ">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+          Top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
