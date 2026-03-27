@@ -36,8 +36,8 @@
       <div class="page-hero-label fade-up">Portfolio</div>
       <h1 class="page-hero-title fade-up">Works</h1>
       <p class="page-hero-desc fade-up">
-        noteで活動中の記事・作品をまとめています。<br />
-        AIいじりを中心に、試してみたことや発見をシェアしています。
+        noteで活動中の記事をまとめています。<br />
+        精神疾患と向き合いながら感じたこと・考えたことを綴っています。
       </p>
 
       <!-- noteへの導線ボタン（目立つ位置に配置） -->
@@ -56,125 +56,119 @@
       <!-- カテゴリを増やしたい場合はここにボタンを追加してください -->
       <div class="filter-bar reveal">
         <button class="filter-btn active" data-filter="all">すべて</button>
-        <button class="filter-btn" data-filter="ai">AI</button>
-        <button class="filter-btn" data-filter="tool">ツール</button>
-        <button class="filter-btn" data-filter="daily">日常</button>
+        <button class="filter-btn" data-filter="intro">自己紹介</button>
+        <button class="filter-btn" data-filter="utsu">うつ病</button>
+        <button class="filter-btn" data-filter="mental">精神疾患</button>
       </div>
 
       <!-- 作品カードグリッド -->
       <!-- カードを増やしたい場合はここに .work-card を追加してください -->
-      <!-- data-category属性でフィルタリングが機能します（all / ai / tool / daily） -->
+      <!-- data-category属性でフィルタリングが機能します（all / intro / utsu / mental） -->
       <div class="works-grid" id="works-grid">
 
         <!-- カード1 -->
-        <article class="work-card reveal" data-category="ai">
-          <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="work-card-link">
+        <article class="work-card reveal" data-category="intro">
+          <a href="https://note.com/yamasan_2351/n/nf762cc9c58b5" target="_blank" rel="noopener noreferrer" class="work-card-link">
             <div class="work-card-image">
-              <!-- 画像のグラデーションプレースホルダー（パープル系） -->
               <div class="card-placeholder card-placeholder--purple">
-                <span class="card-placeholder-icon">🤖</span>
+                <span class="card-placeholder-icon">✍️</span>
               </div>
-              <div class="work-card-tag">AI</div>
+              <div class="work-card-tag">自己紹介</div>
             </div>
             <div class="work-card-body">
-              <h3 class="work-card-title">Claude Codeを使ってみたら、コードが書けなくても何か作れた話</h3>
+              <h3 class="work-card-title">【自己紹介】人と話せなかった自分が、noteを始めた理由</h3>
               <p class="work-card-desc">
-                AIと対話するだけでWebサイトが完成。プログラミング未経験でも「作る」楽しさを体験できたレポートです。
+                人と話すのが怖くて、うつ病になり、それでもnoteを始めた背景を話させてください。
               </p>
             </div>
           </a>
         </article>
 
         <!-- カード2 -->
-        <article class="work-card reveal" data-category="ai">
-          <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="work-card-link">
+        <article class="work-card reveal" data-category="utsu">
+          <a href="https://note.com/yamasan_2351/n/n3ddc3b3a6507" target="_blank" rel="noopener noreferrer" class="work-card-link">
             <div class="work-card-image">
-              <!-- 画像のグラデーションプレースホルダー（ブルー系） -->
               <div class="card-placeholder card-placeholder--blue">
-                <span class="card-placeholder-icon">✨</span>
+                <span class="card-placeholder-icon">🌿</span>
               </div>
-              <div class="work-card-tag">AI</div>
+              <div class="work-card-tag">うつ病</div>
             </div>
             <div class="work-card-body">
-              <h3 class="work-card-title">ChatGPT・Claude・Gemini を1週間使い比べた正直な感想</h3>
+              <h3 class="work-card-title">【うつ病】『普通に生きる』ことを諦めた日｜焦りを手放すまでの話</h3>
               <p class="work-card-desc">
-                それぞれの得意なことと苦手なことを、実際に使ってみた体験をもとにまとめました。
+                「普通に働いて、普通に生きる」ことへの強迫観念から解放されるまでの、価値観の転換を記録した記事です。
               </p>
             </div>
           </a>
         </article>
 
         <!-- カード3 -->
-        <article class="work-card reveal" data-category="tool">
-          <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="work-card-link">
+        <article class="work-card reveal" data-category="utsu">
+          <a href="https://note.com/yamasan_2351/n/n88b81db3cdd5" target="_blank" rel="noopener noreferrer" class="work-card-link">
             <div class="work-card-image">
-              <!-- 画像のグラデーションプレースホルダー（グリーン系） -->
               <div class="card-placeholder card-placeholder--green">
-                <span class="card-placeholder-icon">⚙️</span>
+                <span class="card-placeholder-icon">💰</span>
               </div>
-              <div class="work-card-tag">ツール</div>
+              <div class="work-card-tag">うつ病</div>
             </div>
             <div class="work-card-body">
-              <h3 class="work-card-title">AIで日常の繰り返し作業を自動化してみた【初心者でも再現できる】</h3>
+              <h3 class="work-card-title">うつ病 仕事を辞めた後のお金の不安｜使える制度と私の体験談</h3>
               <p class="work-card-desc">
-                毎日やっていた単純作業をAIに任せたら、思った以上に時間が浮きました。そのやり方を共有します。
+                「働きたいのに働けない」葛藤の中で、退職後の経済的不安と利用できる支援制度についての体験談です。
               </p>
             </div>
           </a>
         </article>
 
         <!-- カード4 -->
-        <article class="work-card reveal" data-category="tool">
-          <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="work-card-link">
+        <article class="work-card reveal" data-category="utsu">
+          <a href="https://note.com/yamasan_2351/n/ned36c8b07928" target="_blank" rel="noopener noreferrer" class="work-card-link">
             <div class="work-card-image">
-              <!-- 画像のグラデーションプレースホルダー（オレンジ系） -->
               <div class="card-placeholder card-placeholder--orange">
-                <span class="card-placeholder-icon">📱</span>
+                <span class="card-placeholder-icon">💬</span>
               </div>
-              <div class="work-card-tag">ツール</div>
+              <div class="work-card-tag">うつ病</div>
             </div>
             <div class="work-card-body">
-              <h3 class="work-card-title">無料で使えるAIツール5選｜2026年版・用途別おすすめ</h3>
+              <h3 class="work-card-title">【うつ病】"大丈夫"と言い続けた私へ｜本音で生きることの怖さと軽さ</h3>
               <p class="work-card-desc">
-                実際に使い続けているツールだけをピックアップ。無料でここまでできるのかと驚いたものばかりです。
+                「大丈夫？」と聞かれるたびに自動的に「大丈夫」と答えていた自分への気づきと、本心を隠し続けることの影響を綴った記事です。
               </p>
             </div>
           </a>
         </article>
 
         <!-- カード5 -->
-        <article class="work-card reveal" data-category="daily">
-          <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="work-card-link">
+        <article class="work-card reveal" data-category="mental">
+          <a href="https://note.com/yamasan_2351/n/nf168ca7bf808" target="_blank" rel="noopener noreferrer" class="work-card-link">
             <div class="work-card-image">
-              <!-- 画像のグラデーションプレースホルダー（ピンク系） -->
               <div class="card-placeholder card-placeholder--pink">
-                <span class="card-placeholder-icon">🌇</span>
+                <span class="card-placeholder-icon">🕊️</span>
               </div>
-              <div class="work-card-tag">日常</div>
+              <div class="work-card-tag">精神疾患</div>
             </div>
             <div class="work-card-body">
-              <h3 class="work-card-title">福岡でのんびりAIいじりをしている日常のこと</h3>
+              <h3 class="work-card-title">【精神疾患当事者が語る】諦めたわけじゃない。手放しただけだったと気づいた話</h3>
               <p class="work-card-desc">
-                特別なことじゃなくても、毎日少しずつ試している。そんな自分の日常をゆるく書いたエッセイです。
+                病気による喪失感から、「失ったものは本当に諦めたのか」という問い直しを通じた心理的転換点を描いた記事です。
               </p>
             </div>
           </a>
         </article>
 
         <!-- カード6 -->
-        <article class="work-card reveal" data-category="ai">
-          <a href="https://note.com/yamasan_2351" target="_blank" rel="noopener noreferrer" class="work-card-link">
+        <article class="work-card reveal" data-category="mental">
+          <a href="https://note.com/yamasan_2351/n/n130b2285e93a" target="_blank" rel="noopener noreferrer" class="work-card-link">
             <div class="work-card-image">
-              <!-- 画像のグラデーションプレースホルダー（パープル系） -->
               <div class="card-placeholder card-placeholder--violet">
-                <span class="card-placeholder-icon">💡</span>
+                <span class="card-placeholder-icon">🚪</span>
               </div>
-              <div class="work-card-tag">AI</div>
+              <div class="work-card-tag">精神疾患</div>
             </div>
             <div class="work-card-body">
-              <h3 class="work-card-title">AIに「プロンプト」を上手く伝えるコツ【自分なりのメモ】</h3>
+              <h3 class="work-card-title">【精神疾患当事者が語る】外に出られなかった日々と、それでも一歩踏み出せた理由</h3>
               <p class="work-card-desc">
-                試行錯誤しながら気づいた、AIへの頼み方のちょっとしたコツをまとめました。初心者目線で書いています。
+                近所の人と会うのが怖い、という極度の外出恐怖から、段階的な改善への道のりを語った記事です。
               </p>
             </div>
           </a>
